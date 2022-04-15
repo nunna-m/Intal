@@ -17,28 +17,6 @@ inlat KA(void* intal1,void* intal2);
 void remove_pre_zeroes(inlat* temp);
 void* add_pre_zeroes(void* intal,int diff);
 
-int main(int argc, char const *argv[])
-{
-	struct timespec start,end;
-	void *ptr1,*ptr2,*diff,*sum,*intal1,*intal2,*product;
-	char *str1="100000000000000000000000000000000000000000000000000000000000000000000008957412547896413231218897845987498785125896325478965412501225478541254521";
-	char *str2="231218897845987498785125896325478965412501225478541254521";
-	//char *str1="1000"; //90000000
-	//char *str2="00990";
-	ptr1=intal_create(str1);
-	ptr2=intal_create(str2);
-
-	intal1=intal_multiply(ptr1,ptr2);
-	printf("%s\n",intal2str(intal1));
-	//inlat t=(inlat)ptr2;
-	//int h=intal_compare(ptr1,ptr2);
-	//printf("%d\n",h);
-	
-	//intal_destroy(ptr1);
-	//intal_destroy(intal2);
-	
-}
-
 void* intal_create(const char* str)
 {
 	inlat temp=(inlat)malloc(sizeof(struct intarblen));
