@@ -45,8 +45,8 @@ void intal_destroy(void* intal)
 {
 	inlat temp=(inlat)intal;
 	free(temp->arr);
-	free(temp);
 	temp->arr=NULL;
+	free(temp);
 	temp=NULL;
 }
 
@@ -127,11 +127,12 @@ void remove_pre_zeroes(inlat* temp)
 
 void* intal_increment(void* intal)
 {
+	
 	void *temp_intal,*ti;
 	inlat temp;
 	temp_intal=intal_create(intal2str(intal));
 	temp = (inlat)temp_intal;
-
+	// printf("Entered intal_increment\n");
 	int i=temp->size-1;
 	while(temp->arr[i]==9 && i>0)
 	{
@@ -159,6 +160,7 @@ void* intal_increment(void* intal)
 
 void* intal_decrement(void* intal)
 {
+	// printf("Entered intal_decrement\n");
 	void *temp_intal,*ti;
 	inlat temp;
 	temp_intal=intal_create(intal2str(intal));
