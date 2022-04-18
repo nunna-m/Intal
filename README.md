@@ -1,13 +1,16 @@
-C library to handle mathematical operations on arbitrary length integers.  
-Very useful for handling very big integers that are not handled by builtin data types.  
-
+<h3>C library to handle mathematical operations on arbitrary length integers.</h3>
+Very useful for handling very big integers that are not handled by builtin data types.
+  
+    
+<br></br>
+<b>Steps to use the library  </b>  
 Clone this repository  
 cd into Intal folder  
 type "make" in cmdline to compile  
-check.c is the client file where the main() function takes in input for intals in char *str1 and char *str2  
+<i>Note: check.c is the client file where the main() function takes in input for intals in char *str1 and char *str2  </i>  
 ./intal to run the executable  
   
-Sample Input:
+Sample Input:  
 cd Intal  
 make  
 ./intal  
